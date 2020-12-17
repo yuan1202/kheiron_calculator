@@ -1,37 +1,52 @@
 # Kheiron Test: Prefix & Infix Calculator
 
+This package provides calucation functions in prefix and infix format.
 
 ## Prerequisites
 
 * Python >= 3.7.9
-* requests >= 2.25.0
 * flask >= 1.1.2
 
 
 ## Getting Started
 
-This package calculates fibonacci number(s) for given indices.
+### Installation
+`
+pip install git+https://github.com/yuan1202/kheiron_calculator.git
+`
 
-An example input file is provided at ./input/example.csv. The program will execute using this file as default input. However user can also provide custom input file by specifying file path.
+### Usage
 
-To run the program with default input file:
-```
-python main.py
-```
+After installation, the package can be used as follows:
 
-To run the program with custom input file:
-```
-python main.py --input (path to user file)
-```
+- Run prefix calculation\
+`
+kheiron_calc '- / 10 + 1 1 * 1 2'
+`  
+or  
+`
+kheiron_calc -m prefix '- / 10 + 1 1 * 1 2'
+`  
 
-To run the program with custom output file location:
-```
-python main.py --output (path to output file)
-```
+- Run infix calculation  
+`
+kheiron_calc -m infix "( 3 + 3 ) * 10"
+`  
 
-To run unit tests
-```
-python -m unittest discover
-```
+- Run unit tests  
+Firstly run  
+`
+git clone https://github.com/yuan1202/kheiron_calculator.git
+`  
+to copy the repository to local directory.  
+Then navigate into the repository folder and run  
+`
+python -m unittest
+`  
+to run unit test cases.
 
-
+- Launch calucaltion app
+`
+kheiron_calc_app
+`  
+The *restAPI.ipynb* provides demonstrations/tests of kheiron_calc_app rest api call.
