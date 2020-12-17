@@ -1,10 +1,12 @@
-# Correvate Test 1: Fibonacci Calculator
+# Kheiron Test: Prefix & Infix Calculator
+
 
 ## Prerequisites
 
-Python >= 3.7.9
-requests >= 2.25.0
-flask >= 1.1.2
+* Python >= 3.7.9
+* requests >= 2.25.0
+* flask >= 1.1.2
+
 
 ## Getting Started
 
